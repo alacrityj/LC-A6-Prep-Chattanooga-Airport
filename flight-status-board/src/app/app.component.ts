@@ -20,13 +20,16 @@ export class AppComponent {
           let newFlight = new Flight(flight.airline, flight.flightNumber, flight.origin, flight.departure, flight.destination, flight.arrival);
           newFlight.gate = flight.gate;
           newFlight.status = flight.status;
-          if (newFlight.destination.includes("Chatanooga")) {
+          if (newFlight.destination.includes("Chattanooga")) {
             this.allArrivals.push(newFlight);
           } else {
             this.allDepartures.push(newFlight);
           }
         })
-      })
-    })
+        console.log(this.allArrivals.length);
+        console.log(this.allDepartures.length);
+      });
+    });
   }
 }
+git a
